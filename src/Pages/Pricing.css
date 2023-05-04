@@ -1,0 +1,217 @@
+.Pricing-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: flex-start;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 2689px;
+}
+
+.pricing-top-image {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: -100px;
+    
+    
+}
+.pricing-top-image img {
+    width: 471px;
+    height: 251px;
+}
+.pricing-bottom-image {
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    
+    width: 100%;
+}
+.pricing-bottom-image img {
+    width: 471px;
+    height: 251px;
+}
+
+.pricing-blue-font h5 {
+    color: #96CCF3;
+}
+
+.pricing-frame {
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 146px;
+}
+.pricing-frame h1 {
+    margin-bottom: 5px;
+}
+
+.pricing-frame p {
+    margin-bottom: 20px;
+}
+.pricing-frame h6 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+.pricing-item {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    border: 3px solid #5C1E1B;
+    border-radius: 10px;
+    padding: 10px 0px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.pricing-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 382px;
+
+}
+.pricing-category-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-content: center;
+    align-items: center;
+    width: 382px;
+    height: 28px;
+    position: relative;
+    top: 24px;
+}
+
+.price-actual {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #5C1E1B;
+    border-radius: 40px;
+    height: 28px;
+    padding: 4px 13px;
+}
+.price-actual h5 {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    margin: 0px;
+}
+
+.extra-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.extra-buttons button {
+    background: #5C1E1B;
+    border: 1px solid #5C1E1B;
+    border-radius: 50px;
+}
+
+.extra-buttons h5 {
+    color: #FFFFFF;
+    font-family: 'Fredoka';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.extra-buttons h5:hover {
+    color: #EAA1C8;
+    cursor: pointer;
+}
+
+.animated-emotes {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    left: 40px;
+    top: 470px;
+    z-index: 2;
+}
+.animated-emotes img {
+    width: 155px;
+    height: 155px;
+}
+
+.animated-charicons {
+    position: absolute;
+    left: 35px;
+    top: 740px;
+}
+.animated-charicons img {
+    width: 331px;
+    height: 184px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .pricing-top-image img {
+        width: 173px;
+        height: 92px;
+    }
+    .pricing-bottom-image img {
+        width: 173px;
+        height: 92px;
+    }
+    .pricing-frame {
+        width: 350px;
+        position: static;
+        align-items: center;
+    }
+    .pricing-item {
+        width: 350px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .pricing-item img {
+        max-width: 350px;
+        
+    }
+    .pricing-breakdown {
+        width: 350px;
+    }
+    .pricing-category-text {
+        width: 350px;
+    }
+    .animated-emotes {
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .animated-charicons {
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-anim {
+        margin-bottom: -215px;
+    }
+}

@@ -1,0 +1,347 @@
+.Request-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: flex-start;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.request-top-image {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: -100px;
+    
+}
+.request-top-image img {
+    width: 471px;
+    height: 251px;
+}
+.request-bottom-image {
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    margin-top: -20px;
+    width: 100%;
+}
+.request-bottom-image img {
+    width: 471px;
+    height: 251px;
+}
+.request-purple-font h5 {
+    color: #C29BEA;
+}
+
+.content-contact {
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+.content-contact h1 {
+    margin-bottom: 10px;
+}
+
+.content-contact h2 {
+    font-family: 'Fredoka';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.17em;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: 'Fredoka';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.23em;
+    color: #5C1E1B;
+    margin-left: 15px;
+}
+
+
+input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    gap: 10px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #5C1E1B;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: #5C1E1B;
+    padding: 0px 15px;
+}
+
+.getintouch2 {
+    width: 800px;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 20px;
+    width: 800px;
+}
+
+.textfield input {
+    width: 800px;
+}
+
+textarea {
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 221px;
+    background: #FFFFFF;
+    border: 1px solid #5C1E1B;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: #5C1E1B;
+    padding: 10px 15px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.submit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.submit button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 40px;
+    background: #5C1E1B;
+    border: 1px solid #5C1E1B;
+    border-radius: 50px;
+    flex-wrap: nowrap;
+    padding: 0px;
+}
+.submit h5 {
+    color: #FFFFFF;
+    font-family: 'Fredoka';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 0.23em;
+}
+
+/*.file-upload {
+    margin-bottom: 20px;
+    min-width: 800px;
+}
+
+.file-upload input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 0px 15px;
+    width: 623px;
+}
+
+.real-file {
+    position: relative;
+    top: 42px;
+    left: 649px;
+    z-index: 2;
+    opacity: 0;
+    margin-top: -40px;
+}
+
+.real-file input {
+    width: 120px;
+    
+}
+
+
+.real-file input:hover {
+    cursor: pointer;
+}
+
+.dummy-file {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    align-content: center;
+    min-width: 800px;
+}
+
+.dummy-file input {
+    min-width: 623px;
+}
+
+.dummy-file button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 158px;
+    height: 40px;
+    background: #5C1E1B;
+    border: 1px solid #5C1E1B;
+    border-radius: 50px;
+    flex-wrap: nowrap;
+    padding: 0px;
+}
+
+.dummy-file h5 {
+    color: #FFFFFF;
+    font-family: 'Fredoka';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 0.23em;
+} */
+
+.services {
+    width: 800px;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 3px solid #5C1E1B;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.services button {
+    font-family: 'Fredoka';
+    
+}
+
+.service-options {
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+    
+}
+
+.styled-option input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    opacity: 0;
+    
+}
+
+
+
+.styled-option {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    height: 17px;
+    width: 17px;
+    background: #FFFBF4;
+    border-radius: 50px;
+}
+.styled-option input:checked ~ button {
+    background: #5C1E1B;
+}
+
+.styled-option input:checked ~ button h5 {
+    color: #7EC7B5;
+}
+.styled-option input:checked ~ button .checkmark {
+    background-color: #5C1E1B;
+    width: 5px;
+    height: 10px;
+    border: solid #7EC7B5;
+    border-width: 0 3px 3px 0;
+    border-radius: 0px;
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 2px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Request-main {
+        overflow-x: hidden;
+    }
+    .request-top-image img {
+        width: 173px;
+        height: 92px;
+    }
+    .request-bottom-image img {
+        width: 173px;
+        height: 92px;
+    }
+    .content-contact {
+        width: 350px;
+        align-items: center;
+        align-content: center;
+    }
+    .textfield {
+        width: 320px;
+    }
+    .textfield input {
+        width: 320px;
+    }
+    textarea {
+        width: 320px;
+    }
+    .services {
+        width: 340px;
+        align-items: center;
+        padding: 5px;
+    }
+    .service-options {
+        flex-wrap: wrap;
+        gap: 6px;
+        align-content: center;
+        align-items: center;
+    }
+    .submit {
+        width: 350px;
+    }
+    .getintouch2 {
+        width: 350px;
+        align-content: center;
+        align-items: center;
+        
+    }
+    .styled-option input {
+        max-width: 150px;
+    }
+    .styled-option button {
+        max-width: 190px;
+
+    }
+}
+
+
