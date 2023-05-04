@@ -92,10 +92,10 @@ export default function HomePage() {
             </div>
 
             <div className="social-media">
-                <a href="http://twitter.com/itsjanelia" target="_blank" rel="noreferrer">
+                <a href="http://twitter.com/itsjanelia" target="_blank" rel="noopener noreferrer">
                     <img src={Twitter} alt="twitter" />
                 </a>
-                <a href="http://twitch.tv/itsjanelia" target="_blank" rel="noreferrer">
+                <a href="http://twitch.tv/itsjanelia" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3_194)">
                         <path d="M17.7981 10.2143L14.6097 13.3571H11.4213L8.63147 16.1071V13.3571H5.04451V1.57141H17.7981V10.2143Z" fill="white"/>
@@ -110,7 +110,7 @@ export default function HomePage() {
                         </defs>
                     </svg>
                 </a>
-                <a href="http://www.ko-fi.com/janelia" target="_blank" rel="noreferrer">
+                <a href="http://www.ko-fi.com/janelia" target="_blank" rel="noopener noreferrer">
                     <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_210_229)">
                         <path d="M28.2442 6.4525C27.8883 4.53644 26.8941 2.95018 25.3688 1.86524C24.1124 0.971964 22.6177 0.5 21.0461 0.5H2.42704C1.18423 0.5 0.40691 1.59473 0.399001 2.60887C0.399001 2.64916 0.399566 2.79478 0.400131 2.83104C0.399001 3.10616 0.370755 11.331 0.427812 15.7191L0.430071 15.7818C0.529496 17.2795 1.27236 18.4421 2.52139 19.0562C3.40039 19.4879 4.24099 19.5012 4.33815 19.5012C4.42289 19.5012 12.8831 19.4753 16.9132 19.4499C17.2041 19.4482 17.4848 19.4131 17.7475 19.3463C19.0943 19.0027 20.0976 18.1704 20.6484 16.9382C20.8585 16.4673 21.002 15.9419 21.0777 15.3669C23.3391 15.2345 25.3417 14.3095 26.6856 12.7469C28.1318 11.0657 28.6848 8.83074 28.2431 6.45365L28.2442 6.4525ZM24.9869 11.2285C23.8831 12.5115 22.0912 13.1814 20.0722 13.0675L18.8548 12.9984L18.8802 14.2405C18.8943 14.9392 18.7977 15.5251 18.5932 15.9827C18.3266 16.5784 17.8842 16.937 17.2001 17.1114C17.1114 17.1338 17.0109 17.1459 16.9002 17.1465C12.9294 17.1718 4.64885 17.1966 4.3438 17.1977C4.302 17.196 3.86588 17.1753 3.45349 16.956C2.97953 16.7039 2.73549 16.2901 2.68747 15.6546C2.63098 11.2245 2.66035 2.9168 2.66092 2.83277V2.80226H21.0461C22.1533 2.80226 23.2007 3.13091 24.0751 3.7531C25.1208 4.49673 25.7761 5.54944 26.0235 6.88072C26.3331 8.54698 25.9648 10.0912 24.9869 11.2285Z" fill="#EAA1C8"/>
