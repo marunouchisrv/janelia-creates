@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react'
+import { useNavigate } from "react-router-dom"
 import emailjs from '@emailjs/browser';
 import "./Request.css"
 import "../Data/images.js"
@@ -6,6 +7,7 @@ import RequestTop from "../Images/image 3.png"
 import RequestBottom from "../Images/image 4.png"
 
 export default function Request() {
+    let navigate = useNavigate();
     const [message, setMessage] = useState("Enter your preferred name or username");
     const [message2, setMessage2] = useState("Enter your email address");
     const [message3, setMessage3] = useState("Enter your twitch channel");
@@ -70,40 +72,51 @@ export default function Request() {
         <div className="nav">
 
 
-                <form action="/">
+                
                     <button style={styles5}
                     onMouseEnter={() => setRotate5("rotate(15deg)")}
-                    onMouseLeave={() => setRotate5("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate5("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/`
+                        navigate(path);
+                    }}>
                         <h5>HOME</h5>
                     </button>
-                </form>
+                
 
 
-                <form action="/gallery">
                     <button style={styles1}
                     onMouseEnter={() => setRotate1("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate1("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate1("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/gallery`
+                        navigate(path);
+                    }}>
                         <h5>GALLERY</h5>
                     </button>
-                </form>
 
-                <form action="/pricing">
                     <button style={styles2}
                     onMouseEnter={() => setRotate2("rotate(15deg)")}
-                    onMouseLeave={() => setRotate2("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate2("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/pricing`
+                        navigate(path);
+                    }}>
                         <h5>PRICING</h5>
                     </button>
-                </form>
+                
 
-                <form action="/TOS">
-                    <button style={styles3}
+                <button style={styles3}
                     onMouseEnter={() => setRotate3("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate3("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate3("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/TOS`
+                        navigate(path);
+                    }}>
                         <h5>TOS</h5>
                     </button>
-                </form>
 
-                <form action="/request#top">
+                
                     <div className="current-page">
                         <button>
                             <div className="request-purple-font">
@@ -111,7 +124,7 @@ export default function Request() {
                             </div>
                         </button>
                     </div>
-                </form>
+                
             </div>
             <div className="hidden-backgrounds">
                 <div className="bg5-hidden">

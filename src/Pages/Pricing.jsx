@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useNavigate } from "react-router-dom"
 import "./Pricing.css"
 import "../Data/images.js"
 import PricingTop from "../Images/pink.png"
@@ -15,7 +16,7 @@ import animEmote2 from "../Images/portfolio images/pricing/animated-emotes-2.gif
 import charIconGif from "../Images/portfolio images/pricing/character-icons.gif"
 
 export default function Pricing() {
-  
+    let navigate = useNavigate();
     const [rotate1, setRotate1] = useState("rotate(0deg)");
     
     const [rotate3, setRotate3] = useState("rotate(0deg)");
@@ -45,24 +46,30 @@ export default function Pricing() {
         <div className="nav">
 
 
-                <form action="/">
+                
                     <button style={styles5}
                     onMouseEnter={() => setRotate5("rotate(15deg)")}
-                    onMouseLeave={() => setRotate5("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate5("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/`
+                        navigate(path);
+                    }}>
                         <h5>HOME</h5>
                     </button>
-                </form>
+                
 
 
-                <form action="/gallery">
                     <button style={styles1}
                     onMouseEnter={() => setRotate1("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate1("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate1("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/gallery`
+                        navigate(path);
+                    }}>
                         <h5>GALLERY</h5>
                     </button>
-                </form>
 
-                <form action="/pricing#top">
+                
                     <div className="current-page">
                         <button>
                             <div className="pricing-blue-font">
@@ -70,23 +77,27 @@ export default function Pricing() {
                             </div>
                         </button>
                     </div>
-                </form>
+               
 
-                <form action="/TOS">
-                    <button style={styles3}
+                <button style={styles3}
                     onMouseEnter={() => setRotate3("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate3("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate3("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/TOS`
+                        navigate(path);
+                    }}>
                         <h5>TOS</h5>
                     </button>
-                </form>
 
-                <form action="/request">
                     <button style={styles4}
                     onMouseEnter={() => setRotate4("rotate(15deg)")}
-                    onMouseLeave={() => setRotate4("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate4("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/request`
+                        navigate(path);
+                    }}>
                         <h5>CONTACT</h5>
                     </button>
-                </form>
             </div>
             <div className="hidden-backgrounds">
                 <div className="bg5-hidden">

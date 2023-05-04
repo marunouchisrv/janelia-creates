@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useNavigate } from "react-router-dom"
 import "./TOS.css"
 import "../Data/images.js"
 import TOSTop from "../Images/purple tear.png"
@@ -6,6 +7,7 @@ import TOSBottom from "../Images/portfolio images/background/corner-bottom-blue.
 
 
 export default function TOS() {
+    let navigate = useNavigate();
   
     const [rotate1, setRotate1] = useState("rotate(0deg)");
     const [rotate2, setRotate2] = useState("rotate(0deg)");
@@ -36,32 +38,43 @@ export default function TOS() {
         <div className="nav">
 
 
-                <form action="/">
+                
                     <button style={styles5}
                     onMouseEnter={() => setRotate5("rotate(15deg)")}
-                    onMouseLeave={() => setRotate5("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate5("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/`
+                        navigate(path);
+                    }}>
                         <h5>HOME</h5>
                     </button>
-                </form>
+                
 
 
-                <form action="/gallery">
+                
                     <button style={styles1}
                     onMouseEnter={() => setRotate1("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate1("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate1("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/gallery`
+                        navigate(path);
+                    }}>
                         <h5>GALLERY</h5>
                     </button>
-                </form>
+                
 
-                <form action="/pricing">
                     <button style={styles2}
                     onMouseEnter={() => setRotate2("rotate(15deg)")}
-                    onMouseLeave={() => setRotate2("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate2("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/pricing`
+                        navigate(path);
+                    }}>
                         <h5>PRICING</h5>
                     </button>
-                </form>
+                
 
-                <form action="/TOS#top">
+                
                     <div className="current-page">
                         <button>
                             <div className="TOS-green-font">
@@ -69,15 +82,17 @@ export default function TOS() {
                             </div>
                         </button>
                     </div>
-                </form>
+                
 
-                <form action="/request">
                     <button style={styles4}
                     onMouseEnter={() => setRotate4("rotate(15deg)")}
-                    onMouseLeave={() => setRotate4("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate4("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/request`
+                        navigate(path);
+                    }}>
                         <h5>CONTACT</h5>
                     </button>
-                </form>
             </div>
             <div className="hidden-backgrounds">
                 <div className="bg5-hidden">

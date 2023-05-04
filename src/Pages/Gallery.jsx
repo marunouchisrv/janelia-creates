@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 import "./Gallery.css"
 import "../Data/images.js"
 import GalleryTop from "../Images/portfolio images/background/corner-top-green.png"
@@ -23,7 +24,7 @@ import charArtMobile6 from "../Images/portfolio images/gallery/character art/kil
 export default function Gallery() {
 
 
-
+    let navigate = useNavigate();
     
     const [rotate2, setRotate2] = useState("rotate(0deg)");
     const [rotate3, setRotate3] = useState("rotate(0deg)");
@@ -53,16 +54,20 @@ export default function Gallery() {
             <div className="nav">
 
 
-                <form action="/">
+                
                     <button style={styles5}
                     onMouseEnter={() => setRotate5("rotate(15deg)")}
-                    onMouseLeave={() => setRotate5("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate5("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/`
+                        navigate(path);
+                    }}>
                         <h5>HOME</h5>
                     </button>
-                </form>
+                
 
 
-                <form action="/gallery#top">
+                
                     <div className="current-page">
                         <button>
                             <div className="gallery-pink-font">
@@ -70,31 +75,43 @@ export default function Gallery() {
                             </div>
                         </button>
                     </div>
-                </form>
+                
 
-                <form action="/pricing">
+                
                     <button style={styles2}
                     onMouseEnter={() => setRotate2("rotate(15deg)")}
-                    onMouseLeave={() => setRotate2("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate2("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/pricing`
+                        navigate(path);
+                    }}>
                         <h5>PRICING</h5>
                     </button>
-                </form>
+                
 
-                <form action="/TOS">
+                
                     <button style={styles3}
                     onMouseEnter={() => setRotate3("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate3("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate3("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/TOS`
+                        navigate(path);
+                    }}>
                         <h5>TOS</h5>
                     </button>
-                </form>
+                
 
-                <form action="/request">
+                
                     <button style={styles4}
                     onMouseEnter={() => setRotate4("rotate(15deg)")}
-                    onMouseLeave={() => setRotate4("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate4("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/request`
+                        navigate(path);
+                    }}>
                         <h5>CONTACT</h5>
                     </button>
-                </form>
+                
             </div>
             <div className="hidden-backgrounds">
                 <div className="bg5-hidden">
