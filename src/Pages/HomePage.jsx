@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 import "./HomePage.css"
 import Janelia from "../Images/image 1.png"
 import homeTop from "../Images/image 3.png"
@@ -24,6 +25,8 @@ export default function HomePage() {
         transform: rotate4
     };
 
+    let navigate = useNavigate();
+
 
 
   return (
@@ -44,37 +47,54 @@ export default function HomePage() {
             <div className="navigation-buttons-homepage">
 
 
-                <form action="/gallery">
+                
                     <button style={styles1}
                     onMouseEnter={() => setRotate1("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate1("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate1("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/gallery`
+                        navigate(path);
+                    }}
+                    type="button">
                         <h5>GALLERY</h5>
                     </button>
-                </form>
+                
 
-                <form action="/pricing">
+                
                     <button style={styles2}
                     onMouseEnter={() => setRotate2("rotate(15deg)")}
-                    onMouseLeave={() => setRotate2("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate2("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/pricing`
+                        navigate(path);
+                    }}>
                         <h5>PRICING</h5>
                     </button>
-                </form>
+                
 
-                <form action="/TOS">
+                
                     <button style={styles3}
                     onMouseEnter={() => setRotate3("rotate(-15deg)")}
-                    onMouseLeave={() => setRotate3("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate3("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/TOS`
+                        navigate(path);
+                    }}>
                         <h5>TOS</h5>
                     </button>
-                </form>
+                
 
-                <form action="/request">
+                
                     <button style={styles4}
                     onMouseEnter={() => setRotate4("rotate(15deg)")}
-                    onMouseLeave={() => setRotate4("rotate(0deg)")}>
+                    onMouseLeave={() => setRotate4("rotate(0deg)")}
+                    onClick={() => {
+                        let path=`/request`
+                        navigate(path);
+                    }}>
                         <h5>CONTACT</h5>
                     </button>
-                </form>
+                
             </div>
             <div className="hidden-backgrounds-homepage">
                 <div className="bg1">
