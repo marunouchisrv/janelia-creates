@@ -117,6 +117,16 @@
     border-top: 1px dashed #D7CBC1;
 }
 
+@media only screen and (min-width: 1920px) {
+    
+        .Welcome {
+            height: 70vh;
+        }
+
+
+    }
+
+
 @media only screen and (max-width: 600px) {
     .HomePage {
         width: 350px;
