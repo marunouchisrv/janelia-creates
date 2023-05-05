@@ -7,6 +7,7 @@
     display: inline-flex;
     flex-direction: row;
     margin-bottom: -100px;
+    z-index: 1;
 }
 .home-bottom-image {
     display: inline-flex;
@@ -14,6 +15,7 @@
     justify-items: flex-end;
     justify-content: flex-end;
     margin-top: -20px;
+    z-index: 1;
 }
 
 .Welcome {
@@ -127,7 +129,7 @@
     }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .HomePage {
         width: 350px;
         
@@ -173,5 +175,8 @@
         width: 173px;
         right: 0px;
         position: absolute;
+    }
+    .WelcomeSplash img {
+        max-width: 400px;
     }
 }

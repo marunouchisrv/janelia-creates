@@ -13,7 +13,7 @@ import streamAssets from "../Images/Streamassets.svg"
 import charArt from "../Images/characterart.svg"
 import Video1 from "../Images/portfolio images/gallery/stream assets/janelia-brb.mp4"
 import Video2 from "../Images/portfolio images/gallery/stream assets/killas-brb.mp4"
-import charIconMobile from "../Images/chariconmobile.png"
+import charIconMobile from "../Images/chariconmobile.svg"
 import charArtMobile from "../Images/portfolio images/gallery/character art/janelia-art-1.png"
 import charArtMobile2 from "../Images/portfolio images/gallery/character art/janelia-art-2.png"
 import charArtMobile3 from "../Images/portfolio images/gallery/character art/killas-art-1.png"
@@ -109,7 +109,7 @@ export default function Gallery() {
                         let path=`/request`
                         navigate(path);
                     }}>
-                        <h5>CONTACT</h5>
+                        <h5>REQUEST</h5>
                     </button>
                 
             </div>
@@ -167,10 +167,10 @@ export default function Gallery() {
             <div className="stream-assets">
                 <img src={streamAssets} alt="stream assets" />
                 <div className="animations">
-                    <video width="370" height="207.56" autoPlay muted loop>
+                    <video width="370" height="207.56" autoPlay muted loop playsInline>
                         <source src={Video1} type="video/mp4" />
                     </video>
-                    <video width="370" height="207.56" autoPlay muted loop>
+                    <video width="370" height="207.56" autoPlay muted loop playsInline>
                         <source src={Video2} type="video/mp4" />
                     </video>             
                 </div>

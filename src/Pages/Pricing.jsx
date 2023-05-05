@@ -4,12 +4,14 @@ import "./Pricing.css"
 import "../Data/images.js"
 import PricingTop from "../Images/pink.png"
 import PricingBottom from "../Images/green tear.png"
-import Emotes from "../Images/Frame 3.png"
+import Emotes from "../Images/Frame 33.svg"
 import animEmotes from "../Images/animemotes.png"
 import charIcons from "../Images/charicons.png"
 import twPanels from "../Images/twpanels.png"
 import Chibi from "../Images/chibi.png"
 import Vtuber from "../Images/vtuber.png"
+import VtuberVid from "../Images/vtuber.mp4"
+import PNGTuberVid from "../Images/pngtuber.gif"
 import PNGTuber from "../Images/pngtuber.png"
 import animEmote1 from "../Images/portfolio images/pricing/animated-emotes-1.gif"
 import animEmote2 from "../Images/portfolio images/pricing/animated-emotes-2.gif"
@@ -96,9 +98,10 @@ export default function Pricing() {
                         let path=`/request`
                         navigate(path);
                     }}>
-                        <h5>CONTACT</h5>
+                        <h5>REQUEST</h5>
                     </button>
-            </div>
+        </div>
+            
             <div className="hidden-backgrounds">
                 <div className="bg5-hidden">
 
@@ -122,6 +125,7 @@ export default function Pricing() {
                 <p>Please take the time to read the <a href="/TOS">Terms of Service</a> before contacting me for commissions.</p>
                 <div className="pricing-item">
                     <img src={Emotes} alt="Emotes" />
+                    
                     <div className="pricing-breakdown">
                         <div className="pricing-category-text">
                             <h2>EMOTES</h2>
@@ -226,6 +230,9 @@ export default function Pricing() {
                 </div>
                 <div className="pricing-item">
                     <img src={PNGTuber} alt="PNGTUBER" />
+                    <div className="pngtuber">
+                        <img src={PNGTuberVid} />
+                    </div>
                     <div className="pricing-breakdown">
                         <div className="pricing-category-text">
                             <h2>PNGTUBER</h2>
@@ -246,6 +253,11 @@ export default function Pricing() {
                 </div>
                 <div className="pricing-item">
                     <img src={Vtuber} alt="VTUBER" />
+                    <div className="vtuber">
+                        <video width="358" height="270" autoPlay muted loop playsInline>
+                            <source src={VtuberVid} type="video/mp4" />
+                        </video>
+                    </div>
                     <div className="pricing-breakdown">
                         <div className="pricing-category-text">
                             <h2>VTUBER</h2>

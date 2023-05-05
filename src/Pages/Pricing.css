@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
-    justify-items: flex-start;
+    justify-content: flex-start;
     min-width: 100vw;
     min-height: 100vh;
     height: 2689px;
@@ -15,6 +14,7 @@
     width: 100%;
     flex-direction: row;
     margin-bottom: -100px;
+    z-index: 4;
     
     
 }
@@ -23,11 +23,13 @@
     height: 251px;
 }
 .pricing-bottom-image {
+    position: absolute;
+    top: 2438px;
     display: inline-flex;
     flex-direction: row;
     justify-items: flex-end;
     justify-content: flex-end;
-    
+    z-index: 4;
     width: 100%;
 }
 .pricing-bottom-image img {
@@ -168,7 +170,43 @@
     
 }
 
-@media only screen and (max-width: 600px) {
+.emotes-high {
+    width: 368px;
+    height: 240px;
+    position: relative;
+    display: none;
+}
+
+.emotes-high img {
+    width: 368px;
+    height: 240px;
+    
+}
+
+.pngtuber {
+    display: flex;
+    width: 348px;
+    height: 273px;
+    position: relative;
+    right: 380px;
+    top: 8px;
+    margin-right: -348px;
+}
+
+.vtuber {
+    display: flex;
+    width: 348px;
+    height: 273px;
+    position: relative;
+    right: 380px;
+    top: 8px;
+    margin-right: -348px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Pricing-main {
+        height: 4000px;
+    }
     .pricing-top-image img {
         width: 173px;
         height: 92px;
@@ -176,6 +214,9 @@
     .pricing-bottom-image img {
         width: 173px;
         height: 92px;
+    }
+    .pricing-bottom-image{
+        top: 3910px;
     }
     .pricing-frame {
         width: 350px;
@@ -213,5 +254,29 @@
     }
     .mobile-anim {
         margin-bottom: -215px;
+    }
+    .price-actual h5 {
+        font-size: 13px;
+    }
+    .pngtuber {
+        display: flex;
+        width: 348px;
+        height: 273px;
+        position: relative;
+        right: 0px;
+        bottom: 273px;
+        top: auto;
+        margin-bottom: -273px;
+    }
+    
+    .vtuber {
+        display: flex;
+        width: 348px;
+        height: 273px;
+        position: relative;
+        right: auto;
+        top: auto;
+        bottom: 273px;
+        margin-bottom: -273px;
     }
 }

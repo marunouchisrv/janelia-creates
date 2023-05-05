@@ -8,9 +8,9 @@ import RequestBottom from "../Images/image 4.png"
 
 export default function Request() {
     let navigate = useNavigate();
-    const [message, setMessage] = useState("Enter your preferred name or username");
-    const [message2, setMessage2] = useState("Enter your email address");
-    const [message3, setMessage3] = useState("Enter your twitch channel");
+    const [message, setMessage] = useState("");
+    const [message2, setMessage2] = useState("");
+    const [message3, setMessage3] = useState("");
     // const [message4, setMessage4] = useState("Select reference images to send");
 
     const handleChange = event => {
@@ -120,7 +120,7 @@ export default function Request() {
                     <div className="current-page">
                         <button>
                             <div className="request-purple-font">
-                                <h5>CONTACT</h5>
+                                <h5>REQUEST</h5>
                             </div>
                         </button>
                     </div>
@@ -270,15 +270,15 @@ export default function Request() {
 
                     <div className="textfield">
                         <label for="name">NAME / USERNAME</label>
-                        <input type="text" id="name" name="from_name" value={message} defaultValue="Enter your preferred name or username" onChange={handleChange}  />
+                        <input type="text" id="name" name="from_name" value={message} placeholder="Enter your preferred name or username" onChange={handleChange} required />
                     </div>
                     <div className="textfield">
                         <label for="email">EMAIL ADDRESS</label>
-                        <input type="text" id="email" name="from_email" value={message2} onChange={handleChange2} />
+                        <input type="text" id="email" name="from_email" value={message2} placeholder="Enter your email address" onChange={handleChange2} required />
                     </div>
                     <div className="textfield">
                         <label for="twitch">TWITCH CHANNEL (IF APPLICABLE) </label>
-                        <input type="text" id="twitch" name="from_twitch" value={message3} onChange={handleChange3}  />
+                        <input type="text" id="twitch" name="from_twitch" value={message3} placeholder="Enter your twitch channel" onChange={handleChange3}  />
                     </div>
                     {/*<div className="file-upload">
                         <label for="file">REFERENCE IMAGES</label>
@@ -297,10 +297,10 @@ export default function Request() {
                     </div>*/}
                 <div className="message">
                     <label for="message">COMMISSION DETAILS</label>
-                    <textarea className="message-input" name="message"  >Please be sure to include expressions/poses/details about the character/etc.</textarea>
+                    <textarea className="message-input" name="message" placeholder="Please be sure to include expressions/poses/details about the character/etc."  ></textarea>
                 </div>
                 <div className="submit">
-                    <button onClick={() => {alert("Email sent! You'll hear back from me soon!")}} type="submit"><h5>SEND REQUEST</h5></button>
+                    <button disabled={message==="" || message2===""} onClick={() => {alert("Email sent! You'll hear back from me soon!")}} type="submit"><h5>SEND REQUEST</h5></button>
                 </div>
                 </form>  
             </div>    

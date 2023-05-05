@@ -92,7 +92,7 @@ export default function HomePage() {
                         let path=`/request`
                         navigate(path);
                     }}>
-                        <h5>CONTACT</h5>
+                        <h5>REQUEST</h5>
                     </button>
                 
             </div>
