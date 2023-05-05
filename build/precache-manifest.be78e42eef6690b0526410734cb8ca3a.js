@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7de40f9ba5291ea4f433",
-    "url": "/static/css/main.a4618d06.chunk.css"
+    "revision": "c0f8e89a92df5ac0de29",
+    "url": "/static/css/main.c7c372ff.chunk.css"
   },
   {
-    "revision": "7de40f9ba5291ea4f433",
-    "url": "/static/js/main.737b6e7e.chunk.js"
+    "revision": "c0f8e89a92df5ac0de29",
+    "url": "/static/js/main.9602f0ac.chunk.js"
   },
   {
     "revision": "f74ebd6815d6a76c8213",
@@ -156,12 +156,12 @@ self.__precacheManifest = [
     "url": "/static/media/Frame 33.8041e6f9.svg"
   },
   {
-    "revision": "126a2a392bedb1a7c4ff7e22e509a091",
-    "url": "/static/media/twpanels.126a2a39.png"
+    "revision": "bffc85f914ec2c5c349be1f08534135d",
+    "url": "/static/media/twpanels.bffc85f9.svg"
   },
   {
-    "revision": "926e1a396b03eaffe8094c3d10d18f12",
-    "url": "/static/media/chibi.926e1a39.png"
+    "revision": "f63fd7db7506e967f0d90b5c7cf9bdc8",
+    "url": "/static/media/chibi.f63fd7db.svg"
   },
   {
     "revision": "c1e3c39a1913ce83021b8e5a0273a951",
@@ -184,7 +184,7 @@ self.__precacheManifest = [
     "url": "/static/media/corner-bottom-blue.ea83efb6.png"
   },
   {
-    "revision": "29e92d459a30180e0350afea89979a64",
+    "revision": "900e677df4f79a47c21d43eea9d0205a",
     "url": "/index.html"
   }
 ];
