@@ -154,7 +154,7 @@ export default function Request() {
       
             
             <div className="getintouch2">
-                <form ref={form} onSubmit={sendEmail} >
+                <form ref={form} onSubmit={sendEmail}  >
                 <div className="services">
                     <h5>TWITCH ASSETS</h5>
                     <div className="service-options">
@@ -299,7 +299,10 @@ export default function Request() {
                     <label for="message">COMMISSION DETAILS</label>
                     <textarea className="message-input" name="message" placeholder="Please be sure to include expressions/poses/details about the character/etc."  ></textarea>
                 </div>
+                
                 <div className="submit">
+                    <div class="g-recaptcha" data-sitekey="6Ldb_-0lAAAAADc8KOggO1bUn0x4Bt-NYc_F3i29"></div>
+                    <br/>
                     <button disabled={message==="" || message2===""} onClick={() => {alert("Email sent! You'll hear back from me soon!")}} type="submit"><h5>SEND REQUEST</h5></button>
                 </div>
                 </form>  

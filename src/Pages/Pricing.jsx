@@ -231,7 +231,7 @@ export default function Pricing() {
                 <div className="pricing-item">
                     <img src={PNGTuber} alt="PNGTUBER" />
                     <div className="pngtuber">
-                        <img src={PNGTuberVid} />
+                        <img src={PNGTuberVid} alt ="pngtuber"/>
                     </div>
                     <div className="pricing-breakdown">
                         <div className="pricing-category-text">
