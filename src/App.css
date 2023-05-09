@@ -147,15 +147,18 @@ button h5 {
 .hidden-backgrounds {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
   position: sticky;
-  margin-top: -40px;
+  margin-top: -100px;
+  height: 100px;
   width: 100%;
   background-color: #FFFBF4;
   top: 0px;
   z-index: 3;
+  border-bottom: 1px solid #5C1E1B;
 }
 
 .bg5-hidden {
@@ -197,9 +200,10 @@ button h5 {
 .nav {
   position: sticky;
   top: 0px;
-  margin-top: -86px;
+  height: 100px;
+  margin-top: -150px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;

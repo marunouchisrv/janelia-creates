@@ -55,9 +55,12 @@ export default function Request() {
       emailjs.sendForm('service_mjhb87n', 'template_v54pv1h', form.current, 'wopzxqh0ARpnWLOMt')
         .then((result) => {
             console.log(result.text);
+            alert("Email sent! You'll hear back from me soon!");
             document.location.reload();
         }, (error) => {
             console.log(error.text);
+            alert("NOT SENT! Make sure all fields are valid and the reCAPTCHA challenge is completed, and try again.")
+            
         });
     };
 
@@ -303,7 +306,7 @@ export default function Request() {
                 <div className="submit">
                     <div class="g-recaptcha" data-sitekey="6Ldb_-0lAAAAADc8KOggO1bUn0x4Bt-NYc_F3i29"></div>
                     <br/>
-                    <button disabled={message==="" || message2===""} onClick={() => {alert("Email sent! You'll hear back from me soon!")}} type="submit"><h5>SEND REQUEST</h5></button>
+                    <button disabled={message==="" || message2===""} type="submit"><h5>SEND REQUEST</h5></button>
                 </div>
                 </form>  
             </div>    
