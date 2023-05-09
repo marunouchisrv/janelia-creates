@@ -5,6 +5,7 @@ import "./Request.css"
 import "../Data/images.js"
 import RequestTop from "../Images/image 3.png"
 import RequestBottom from "../Images/image 4.png"
+import useScript from "../Components/useScript"
 
 export default function Request() {
     let navigate = useNavigate();
@@ -48,7 +49,6 @@ export default function Request() {
     const form = useRef();
 
 
-
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -63,6 +63,8 @@ export default function Request() {
             
         });
     };
+
+    useScript('https://www.google.com/recaptcha/api.js');
 
 
   return (
