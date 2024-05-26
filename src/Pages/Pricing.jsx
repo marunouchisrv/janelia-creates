@@ -130,7 +130,7 @@ export default function Pricing() {
                         <div className="pricing-category-text">
                             <h2>EMOTES</h2>
                             <div className="price-actual">
-                                <h5>$20 USD per emote</h5>
+                                <h5>$25 USD per emote</h5>
                             </div>
                             
                         </div>
