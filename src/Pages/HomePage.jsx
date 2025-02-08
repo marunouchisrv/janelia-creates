@@ -42,7 +42,7 @@ export default function HomePage() {
             <p>I’m a designer & illustrator who enjoys making cute things. Things I make include: emotes, stream assets, vtubers, and character art. If you are interested in what I do or would like to commission me, please take a look at the links below.</p>
             <div className="commission-status">
                 <h6>COMMISSION STATUS</h6>
-                <h5> WAITLISTED</h5>
+                <h5> OPEN</h5>
             </div>
             <div className="navigation-buttons-homepage">
 
